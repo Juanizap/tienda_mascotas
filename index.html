@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Responsivo con Bootstrap</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row portada">
+            <div class="col-12">
+            </div>
+        </div>
+        <div class="row nav">
+            <div class="col-md-3 col-sm-6"><a href="#">Menu</a></div>
+            <div class="col-md-3 col-sm-6"><a href="#">Productos</a></div>
+            <div class="col-md-3 col-sm-6"><a href="#">Nuestra Empresa</a></div>
+            <div class="col-md-3 col-sm-6"><a href="#">Ayuda</a></div>
+        </div>
+
+        <div class="row main">
+            <div class="col-12 contenedor_articulos">
+                <h2>OFERTAS</h2>
+                <div class="row galeria_1">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 caja_articulo"><h4>Juguete 1</h4><img class="articulo" src="img/producto_1.png" alt="juguete_perro"><h5> <br> $3000.-</h5><div class="carrito"><p>Añadir al Carrito<br><br>+</p><img src="img/cart.png" alt="carrito"></div></div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 caja_articulo"><h4>Juguete 2</h4><img class="articulo" src="img/producto_2.jpg" alt="juguete_perro"><h5> <br> $2000.-</h5><div class="carrito"><p>Añadir al Carrito<br><br>+</p><img src="img/cart.png" alt="carrito"></div></div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 caja_articulo"><h4>Juguete 3</h4><img class="articulo" src="img/producto_3.jpg" alt="juguete_perro"><h5> <br> $1500.-</h5><div class="carrito"><p>Añadir al Carrito<br><br>+</p><img src="img/cart.png" alt="carrito"></div></div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 caja_articulo"><h4>Juguete 4</h4><img class="articulo" src="img/producto_4.jpg" alt="juguete_perro"><h5> <br> $7000.-</h5><div class="carrito"><p>Añadir al Carrito<br><br>+</p><img src="img/cart.png" alt="carrito"></div></div>
+                    
+                    </div>
+                    <div class="row galeria_2">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 caja_articulo"><h4>Juguete 5</h4><img class="articulo" src="img/producto_5.jpg" alt="juguete_perro"><h5> <br> $3500.-</h5><div class="carrito"><p>Añadir al Carrito<br><br>+</p><img src="img/cart.png" alt="carrito"></div></div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 caja_articulo"><h4>Juguete 6</h4><img class="articulo" src="img/producto_6.jpg" alt="juguete_perro"><h5> <br> $3200.-</h5><div class="carrito"><p>Añadir al Carrito<br><br>+</p><img src="img/cart.png" alt="carrito"></div></div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 caja_articulo"><h4>Juguete 7</h4><img class="articulo" src="img/producto_7.jpg" alt="juguete_perro"><h5> <br> $1000.-</h5><div class="carrito"><p>Añadir al Carrito<br><br>+</p><img src="img/cart.png" alt="carrito"></div></div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 caja_articulo"><h4>Juguete 8</h4><img class="articulo" src="img/producto_8.jpg" alt="juguete_perro"><h5> <br> $1800.-</h5><div class="carrito"><p>Añadir al Carrito<br><br>+</p><img src="img/cart.png" alt="carrito"></div></div>
+                    
+                    </div>
+
+            </div>
+        </div>
+
+        <div class="row article"> 
+            <h2>Productos Destacados</h2>
+            <div class="col-md-12"><div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/producto_1.png" class="d-block w-100" alt="articulo1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/producto_2.jpg" class="d-block w-100" alt="articulo2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/producto_3.jpg" class="d-block w-100" alt="articulo3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div></div>
+          
+        </div>
+
+        <div class="row footer">
+            <div class="col-12">
+              
+              <div class="row nav_footer">
+              <div class="col-md-12 col-2"><a href="#">Menu</a></div>
+              <div class="col-md-12 col-2"><a href="#">Productos</a></div>
+              <div class="col-md-12 col-2"><a href="#">Nuestra Empresa</a></div>
+              <div class="col-md-12 col-2"><a href="#">Ayuda</a></div>
+              </div>
+              
+        </div>
+        <p> Mundo Perros Ⓡ Todos los derechos revervados</p>
+        </div>
+           
+        </div>
+
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+</body>
+</html>
